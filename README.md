@@ -1,5 +1,6 @@
+Espacio para probar mis aprendizajes en:
 # Open-bootcamp en https://open-bootcamp.com/
 
-Es de bien nacidos ser agradecidos, aquí mi granito de arena:
+Y como es de bien nacidos ser agradecidos, aquí mi granito de arena:
 
-Plataforma 100% recomendable y gratuita de formación
+Plataforma profesional 100% recomendable y gratuita de formación
