@@ -1,0 +1,12 @@
+let lista1 = "Juan";
+let lista2 = 22;
+let lista3 = true;
+let lista4 = "1 de enero";
+let lista5 = {
+    título: "El Zorrocorro",
+    autor: "Felipe",
+    fecha: "1 del 1 de 2000",
+    url: ""
+}
+let arrListas = [lista1, lista2, lista3, lista4, lista5];
+console.log(arrListas);
