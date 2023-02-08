@@ -5,4 +5,4 @@ while (true) {
     num--
     if (num === 1) break
 }
-console.log(factorial)
+console.log(factorial);    //3628800
