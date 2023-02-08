@@ -10,3 +10,11 @@ let lista5 = {
 }
 let arrListas = [lista1, lista2, lista3, lista4, lista5];
 console.log(arrListas);  //["Juan", 22, true, "1 de enero", { título: "El Zorrocorro", autor: "Felipe", fecha: "1 del 1 de 2000", url: ""}]
+
+------------------
+-añadir +1 a cada elemento del array-
+let array = [1, 2, 3];
+for (let i = 0; i < array.length; i++) {
+  array[i] += 1;
+}
+console.log(array);  // [2,3,4]
