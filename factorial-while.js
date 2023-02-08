@@ -4,4 +4,4 @@ while (num >= 1) {
     factorial *= num
     num--
 }
-console.log(factorial)
+console.log(factorial)  //3628800
