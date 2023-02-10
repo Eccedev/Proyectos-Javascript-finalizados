@@ -18,3 +18,37 @@ for (let i = 0; i < n; i++) {
 console.log(str);  // "aAaAa"
 
 --------
+// contar una letra del string
+let str = 'comoConComida';
+let count = 0;
+let i;
+for (i = 0; i < str.length; i++) {
+  if (str[i].toLowerCase() === 'c') {
+    count++
+  }
+} console.log(count);   // 3
+
+----------
+//conteo de vocales de string
+let vowels = ['a', 'e','i','o','u'];
+let count = 0;
+let str = 'Como con comida';
+for (let i = 0; i < str.length; i++) {
+  if (vowels.includes(str[i].toLowerCase())) {
+    count++
+  }
+}
+ console.log(count);  // 6
+ 
+ ---------
+ //contar elementos de array repetidos
+ let elements = ['e', 'k','e','z','i', 'z'];
+let elementCount = {};
+for (let i = 0; i < elements.length; i++) {
+  if (!elementCount[elements[i]]) {
+    elementCount[elements[i]] = 1;
+  } else {
+    elementCount[elements[i]] += 1;
+  }
+}
+ console.log(elementCount);   // {"e":2,"k":1,"z":2,"i":1}
