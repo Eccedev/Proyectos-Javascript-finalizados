@@ -1,0 +1,65 @@
+
+
+body{
+	background: #FFFF00;
+}
+
+#contenedor{
+	margin: 10px auto;
+	width: 390px;   /* redimensionado para mejorar vista en todos los dispositivos*/
+	height: 115px;
+	min-height: 100vh;  /* redimensionado para mejorar vista en todos los dispositivos*/
+    max-width: 400px;    /* redimensionado para mejorar vista en todos los dispositivos*/
+}
+
+#tiempo{
+	display: flex;          /* flex nos permite centrar correctamente*/
+	align-items: center; 
+	justify-content: center;
+}
+
+#botones{
+	display: flex;            /* flex nos permite centrar correctamente*/
+	align-items: center; 
+	justify-content: center;
+}
+.reloj{
+	float: left;
+	font-size: 60px;   /*reducir tamaño fuentes*/
+	font-family: Helvetica,Courier,sans-serif;  /* añadimos helvética */
+	color: #070706;
+}
+.boton{
+	outline: none;
+	border: 1px solid #363431;
+	color: white;
+	margin: 5px;
+	width: 102px;
+	height: 30px;
+	text-shadow: 0px -1px 1px black;
+	font-size: 20px;
+	border-radius: 5px;
+	font-family: Helvetica,Courier,sans-serif; /* añadimos courier y sans-serif*/
+	cursor: pointer;
+	background-image: linear-gradient(#3aad02,#2c6f05);
+}
+.boton:active{
+	background-image: linear-gradient(#2c6f05,#3aad02);
+}
+.boton:hover{
+	box-shadow: 0px 0px 14px #3aad02;
+}
+.boton#parar {
+    background-image: linear-gradient(#970606,#b90202); /* modificamos colores de botones */
+}
+.boton#parar:hover{
+	box-shadow: 0px 0px 14px hsl(0, 98%, 17%);  /* modificamos colores de botones */
+}
+
+.boton#reinicio {
+    background-image: linear-gradient(#0e0000,#555252);   /* modificamos colores de botones */
+}
+.boton#reinicio:hover{
+	box-shadow: 0px 0px 14px hsl(0, 100%, 7%);  /* modificamos colores de botones */
+}
+

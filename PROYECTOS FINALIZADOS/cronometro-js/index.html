@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Cronómetro</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div id="contenedor">
+  <div id="tiempo">                              <!-- un nuevo div para controlar centrado en css -->
+    <div class="reloj" id="Horas">00</div>
+    <div class="reloj" id="Minutos">:00</div>
+    <div class="reloj" id="Segundos">:00</div>
+    <div class="reloj" id="Centesimas">:00</div>
+  </div>
+  <div id="botones">                               <!-- un nuevo div para controlar centrado en css -->
+    <input type="button" class="boton" id="inicio" value="Inicia &#9658;" onclick="inicio();">
+    <input type="button" class="boton" id="parar" value="Para &#8718;" onclick="parar();" disabled>
+    <!-- <input type="button" class="boton" id="continuar" value="Continúa&#8634;" onclick="inicio();" disabled> --><!-- esta tarea  la realiza ahora también botón Inicia-->
+    <input type="button" class="boton" id="reinicio" value="Borra &#8635;" onclick="reinicio();" disabled>
+  </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
+
