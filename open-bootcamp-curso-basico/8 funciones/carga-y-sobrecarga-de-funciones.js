@@ -16,7 +16,7 @@ saludar()
 /// 5. global()
 
 // function recursivo() {
-//     recursivo()
+//     recursivo()         //error de concepto que sobrecarga
 // }
 
-// recursivo()
+// recursivo()             //al llamarla da error Max call stack size exceeded pues no tiene fin
