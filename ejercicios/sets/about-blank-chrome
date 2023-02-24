@@ -1,0 +1,9 @@
+/*
+- Abre una nueva ventana "about:blank" en Google Chrome
+- Abre la consola de desarrollador de Google Chrome (F12)
+- Pregunta al usuario cuál es su edad y almacénala en una variable llamada edad
+*/
+/* nota: directamente F12 o en la url de una pestaña escribimos about:blank + menú tres puntos de la derecha+ más herramientas+herramientas desarrolladores y en la consola escribimos: */
+
+const edad = prompt("¿Cuál es tu edad?")
+console.log(edad)   // 20
