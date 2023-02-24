@@ -1,0 +1,55 @@
+//Crea un archivo JS que contenga las siguientes líneas
+
+//- Una variable que contenga la lista de la compra (mínimo 5 elementos)
+let array = ["leche", "cereales", "tomate", "lechuga", "pan"];
+console.log(array)
+//- Modifica la lista de la compra y añádele "Aceite de Girasol"
+array.push("Aceite de Girasol");
+console.log(array)
+//- Vuelve a modificar la lista de la compra eliminando "Aceite de Girasol"
+array.pop("Aceite de Girasol")
+console.log(array)
+//- Una lista de tus 3 películas favoritas (objetos con propiedades: titulo, director, fecha)
+let peliculas = [
+    {
+        titulo: "La vida",
+        director: "Manuel",
+        fecha: new Date(2000, 3, 26)
+    },
+    {
+        titulo: "Una araña",
+        director: "Felipe R.",
+        fecha: new Date(1995, 2, 14)
+    },
+    {
+        titulo:"Avioneta",
+        director: "Fede S.",
+        fecha: new Date(2011, 7, 13)
+    }
+];
+console.log(peliculas);
+
+//- Una nueva lista que contenga las películas posteriores al 1 de enero de 2010 (utilizando filter)
+const listaPelisPosterior = peliculas.filter(pelicula => pelicula.fecha > new Date(2010, 1, 1));
+console.log(listaPelisPosterior);
+
+
+//- Una nueva lista que contenga los directores de la lista de películas original (utilizando map)
+const directores = peliculas.map(pelicula => {
+    return pelicula.director
+});
+console.log(directores);
+
+//- Una nueva lista que contenga los títulos de la lista de películas original (utilizando map)
+const titulos = peliculas.map(pelicula => {
+    return pelicula.titulo
+});
+console.log(titulos);
+
+//- Una nueva lista que concatene la lista de directores y la lista de los títulos (utilizando concat)
+const union = directores.concat(titulos);
+console.log(union);
+
+//- Una nueva lista que concatene la lista de directores y la lista de los títulos (utilizando el factor de propagación)
+const unionFacProp = [...directores, ...titulos];
+console.log(unionFacProp)
