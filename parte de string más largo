@@ -1,5 +1,0 @@
-let string = "happyxyou";
-const foundX = string.indexOf('x');
-const firstSplit = string.slice(0, foundX);
-const secondSplit = string.slice(foundX + 1);
-console.log((firstSplit.length > secondSplit.length) ? firstSplit : secondSplit);  // "happy"
