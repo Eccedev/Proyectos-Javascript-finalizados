@@ -1,0 +1,101 @@
+// Declaración de una clase (de momento, vacía)
+class Animal {}  // las clases empiezan en mayúsculas
+
+// Crear (instanciar) un objeto basada en una clase
+const pato = new Animal(); //dentro de la clase Animal hay ahora un objeto llamado pato
+
+---
+
+class Personaje {
+  name;                 // Propiedad sin definir (undefined)
+  type = "Player";      // Propiedad definida
+  lifes = 5;            // Propiedad definida con 5 vidas restantes
+  energy = 10;          // Propiedad definida con 10 puntos de energía
+
+  constructor(name) {
+    this.name = name;   // Modificamos el valor de la propiedad name
+    console.log(`¡Bienvenido/a, ${this.name}!`);  // Accedemos al valor actual de la propiedad name
+  }
+}
+
+const mario = new Personaje("Mario");   // '¡Bienvenido/a, Mario!'
+
+ ----------
+
+// METODO PUBLICO DE CLASE
+class Personaje {
+  name = "Mario";
+
+  constructor() {
+    this.hablar();
+  }
+
+  hablar() {
+    console.log("It's me, Mario!");
+  }
+}
+
+const mario = new Personaje();      // It's me, Mario! (se ha accedido a hablar() desde dentro de la clase)
+mario.hablar();                     // It's me, Mario! (se ha accedido a hablar() desde fuera de la clase)
+
+--  
+ 
+ // METODO PRIVADO DE CLASE
+ class Personaje {
+  name = "Mario";
+
+  constructor() {
+    this.#hablar();
+  }
+
+  #hablar() {
+    console.log("It's me, Mario!");
+  }
+}
+
+const mario = new Personaje();      // It's me, Mario! (se ha accedido a #hablar() desde dentro de la clase)
+
+// Da error, no se permite acceder a un método privado desde fuera de la clase
+// Uncaught SyntaxError: Private field '#hablar' must be declared in an enclosing class
+mario.#hablar();
+
+// Da error, el método hablar() no existe, ya que el nombre del método es #hablar()
+// Uncaught TypeError: mario.hablar is not a function
+mario.hablar();
+ 
+  -----
+  
+  METODO SUPER
+  
+  class Forma {          //CLASE PADRE
+  type = "geométrica";
+  color = "naranja";
+
+  constructor() {
+    console.log("Constructor padre finalizado.");
+  }
+
+  show() {
+    console.log(`Soy una forma ${this.type} de color ${this.color}`);
+  }
+
+  setColor(color) {               // METODO MODIFICANDO PADRE
+    this.color = color;
+  }
+}
+
+class Cuadrado extends Forma {         //  CLASE HIJO, palabra clave extends seguida de la clase padre que va a heredar
+  type = "cuadrada";
+
+  constructor() {
+    super();
+    console.log("Constructor hijo finalizado.");
+  }
+}
+
+const c1 = new Cuadrado();
+c1.show();    // Soy una forma cuadrada de color naranja
+
+const c2 = new Cuadrado();
+c2.setColor("amarillo");
+c2.show();    // Soy una forma cuadrada de color amarillo
