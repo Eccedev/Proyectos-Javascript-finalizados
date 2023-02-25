@@ -1,0 +1,15 @@
+{
+  "name": "sesion-09-gestion-errores",       //dado por la carpeta del proyecto
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",                          // target ¡cuidado que puede tener otro archivo si existiera en el proyecto
+  "scripts": {
+    "start": "node index.js"                   // modificado para target, antes era 'test'
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "winston": "^3.6.0"
+  }
+}
