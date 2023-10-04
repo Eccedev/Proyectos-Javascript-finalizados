@@ -1,2 +1,0 @@
-{"level":"error","message":"esto es un error","service":"user-service"}            //pruebas:  error de logger.error("esto es un error")   en index.js
-{"level":"error","message":"Error: showError function","service":"user-service"}  //error de la función showError()   en index.js
