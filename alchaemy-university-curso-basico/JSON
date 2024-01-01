@@ -1,5 +1,0 @@
-// JSON (notación objetos JavaScript), formato para transferir datos de JavaScript.
-
-const person = JSON.stringify({ name: "Jim" });
-
-console.log(person); // {"name":"Jim"}   ... parecido a objetos
